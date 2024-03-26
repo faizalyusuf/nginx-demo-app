@@ -1,0 +1,9 @@
+version: '3.5'
+services:
+  nginx:
+    image: nginx:1.25
+    ports:
+      - "99:80"
+    volumes:
+      - /home/ubuntu/nginx/html:/usr/share/nginx/html
+    restart: always
